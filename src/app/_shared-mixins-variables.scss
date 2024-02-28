@@ -1,0 +1,41 @@
+@use 'shared-variables' as *;
+
+@mixin fg-warn() {
+  color: $fg-warn;
+}
+
+@mixin fg-normal() {
+  color: $fg-normal;
+}
+
+@mixin bg-light() {
+  background-color: $bg-light;
+}
+
+@mixin border($thickness) {
+  border: solid $thickness $fg-border;
+  border-radius: 5px;
+}
+
+@mixin card() {
+  @include border(2px);
+  @include bg-light();
+  @include fg-normal();
+  padding: $padding;
+}
+
+@mixin title() {
+  color: $fg-warn;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2em;
+  padding: 5px 10px 20px 5px;
+  margin: 5px 10px 20px 5px;
+}
+
+@mixin sub-title() {
+  color: $fg-normal;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em;
+  padding: 5px 10px 20px 5px;
+  margin: 5px 10px 20px 5px;
+}

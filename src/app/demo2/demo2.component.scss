@@ -1,0 +1,5 @@
+@use '../shared-mixins-variables' as *;
+
+div {
+  @include card();
+}

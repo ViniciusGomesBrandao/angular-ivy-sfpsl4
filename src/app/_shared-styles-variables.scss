@@ -1,0 +1,41 @@
+@use 'shared-variables' as *;
+
+.border {
+  border: solid 2px $fg-border;
+  border-radius: 5px;
+}
+
+.fg-warn {
+  color: $fg-warn;
+}
+
+.fg-normal {
+  color: $fg-normal;
+}
+
+.bg-light {
+  background-color: $bg-light;
+}
+
+.card {
+  padding: $padding;
+  @extend .fg-normal;
+  @extend .bg-light;
+  @extend .border;
+}
+
+.title {
+  color: $fg-warn;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2em;
+  padding: 5px 10px 20px 5px;
+  margin: 5px 10px 20px 5px;
+}
+
+.sub-title {
+  color: $fg-normal;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em;
+  padding: 5px 10px 20px 5px;
+  margin: 5px 10px 20px 5px;
+}

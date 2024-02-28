@@ -1,0 +1,17 @@
+// https://sass-lang.com/
+// https://sass-lang.com/documentation/style-rules/parent-selector
+
+:host {
+  display: grid;
+  grid-gap: 10px;
+}
+
+button {
+  margin-top: 10px;
+  justify-self: start;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: blue;
+  color: white;
+  cursor: pointer;
+}

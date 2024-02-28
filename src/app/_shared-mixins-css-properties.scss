@@ -1,0 +1,39 @@
+@mixin fg-warn() {
+  color: var(--fg-warn);
+}
+
+@mixin fg-normal() {
+  color: var(--fg-normal);
+}
+
+@mixin bg-light() {
+  background-color: var(--bg-light);
+}
+
+@mixin border($thickness) {
+  border: solid $thickness var(--fg-border);
+  border-radius: 5px;
+}
+
+@mixin card() {
+  @include border(2px);
+  @include bg-light();
+  @include fg-normal();
+  padding: var(--padding);
+}
+
+@mixin title() {
+  color: var(--fg-warn);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2em;
+  padding: 5px 10px 20px 5px;
+  margin: 5px 10px 20px 5px;
+}
+
+@mixin sub-title() {
+  color: var(--fg-normal);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 1.5em;
+  padding: 5px 10px 20px 5px;
+  margin: 5px 10px 20px 5px;
+}

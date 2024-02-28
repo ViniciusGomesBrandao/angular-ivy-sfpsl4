@@ -1,0 +1,22 @@
+.theme-1 {
+  --fg-normal: gray;
+  --fg-warn: orange;
+  --bg-light: lightgray;
+  --fg-border: gray;
+  --padding: 10px;
+}
+
+.theme-2 {
+  --fg-normal: blue;
+  --fg-warn: red;
+  --bg-light: lightgreen;
+  --fg-border: black;
+  --padding: 30px;
+}
+
+body {
+  font-family: Roboto, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 10px;
+}
